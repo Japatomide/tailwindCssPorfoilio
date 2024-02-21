@@ -1,0 +1,210 @@
+.card {
+  /* width: 320px; */
+  height: 350px;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.card .header span:first-child {
+  font-weight: 600;
+  color: #717171;
+  margin-right: 4px;
+}
+
+.card .heading {
+  font-size: 24px;
+  margin: 24px 0 16px;
+  font-weight: 600;
+}
+
+.card .categories {
+  display: flex;
+  gap: 8px;
+}
+
+.card .categories span {
+  background-color: #e81cff;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50em;
+}
+
+.card .footer {
+  font-weight: 600;
+  color: #717171;
+  margin-right: 4px;
+}
+
+.card:hover {
+  rotate: 8deg;
+}
+
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+.form-container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .logo-container {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #1778f2;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: #fff;
+  background-color: #212121;
+  border: none;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #313131;
+}
+
+.form-container .link {
+  color: #1778f2;
+  text-decoration: none;
+}
+
+.form-container .signup-link {
+  align-self: center;
+  font-weight: 500;
+}
+
+.form-container .signup-link .link {
+  font-weight: 400;
+}
+
+.form-container .link:hover {
+  text-decoration: underline;
+}
+

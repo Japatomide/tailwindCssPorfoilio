@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tailwind Crash Course</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-slate-900 text-white">
+      <nav class="flex justify-between container mx-auto items-center p-3">
+        <!-- Logo -->
+        <div class="text-3xl font-bold hover:text-black cursor-pointer">JP's Blog</div>
+        <div class="text-4xl font-serif text-purple-600 hover:text-black cursor-pointer">Abba's Doings</div>
+        <!-- nav items -->
+        <ul class="flex gap-8 text-2xl">
+          <li><a class="hover:text-slate-600" href="#about">About</a></li>
+          <li><a class="hover:text-slate-600" href="#projects">Projects</a></li>
+          <li><a class="hover:text-slate-600" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ************* -->
+
+    <!-- Hero section-->
+    <article
+      class="flex items-center justify-center flex-col lg:flex-row lg:gap-16 lg:my-16 gap-8 my-8"
+    >
+      <div>
+        <h1 class="text-[4rem] font-semibold">Hello, I'm Jaiyeola Paul</h1>
+        <p class="text-2xl text-slate-400">Welcome to my blog</p>
+      </div>
+      <div>
+        <img
+          src="/img/undraw_Blogging_re_kl0d.png"
+          alt="illustrator"
+          style="height: 400px"
+        />
+      </div>
+    </article>
+    <!-- ****** -->
+
+    <!-- Featured posts -->
+    <section class="rounded-lg px-5 grid place-items-center bg-slate-900 m-8">
+      <h2 class="text-[2.5rem] text-center my-11 text-white container">Featured Posts</h2>
+
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-4 max-w-[1200px] w-full mb-12" 
+      >
+        <article>
+          <div class="card rounded-lg">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>12-April-2022</span>
+              </div>
+              <p class="heading">
+                The science of happiness: What truly makes us happy?
+              </p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by Arpin Ronalds</div>
+          </div>
+        </article>
+        <article>
+          <div class="card">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>29-July-2021</span>
+              </div>
+              <p class="heading">How AI is revolutionising healthcare</p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by David Rice</div>
+          </div>
+        </article>
+        <article>
+          <div class="card">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>28-Feb-2023</span>
+              </div>
+              <p class="heading">
+                Cryptocurrency: Understanding the future of money
+              </p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by Harsh Gupta</div>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!-- Category Section -->
+    <section>
+      <h2 class="text-[2.5rem] text-center my-11 text-white">All our Categories</h2>
+      <section class="flex flex-wrap justify-center gap-4 my-12">
+    <button class="cssbuttons-io">
+        <span>
+            Agriculture
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Economics
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Technology
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Internet of things(IOT)
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Music
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Automibles
+        </span>
+    </button>
+    <button class="cssbuttons-io">
+        <span>
+            Climate change
+        </span>
+    </button>
+    </section>
+<!-- Recent Posts -->
+
+<section class="rounded-lg px-5 grid place-items-center bg-slate-900 mx-12">
+      <h2 class="text-[2.5rem] text-center my-11 text-white container">Recent Posts</h2>
+
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-4 max-w-[1200px] w-full mb-12" 
+      >
+        <article>
+          <div class="card">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>15-March-2022</span>
+              </div>
+              <p class="heading">
+                The power of gratitude: How practising gratitude can improve your life
+              </p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by Eren Jaeger</div>
+          </div>
+        </article>
+        <article>
+          <div class="card">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>29-July-2021</span>
+              </div>
+              <p class="heading">The psychology behind procrastination and how to overcome it</p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by Jean McCaugh</div>
+          </div>
+        </article>
+        <article>
+          <div class="card">
+            <div class="main-content">
+              <div class="header">
+                <span>Article on</span>
+                <span>28-October-2023</span>
+              </div>
+              <p class="heading">
+                Unusual hobbies from around the world
+              </p>
+              <div class="categories">
+                <span>Read...</span>
+              </div>
+            </div>
+            <div class="footer">by Ryan Davis
+          </div>
+        </article>
+      </section>
+    </section>
+    </section>
+    <!-- Newsletter form -->
+    <section class="flex justify-center py-40">
+        <div class="form-container p-14 rounded-lg">
+      <div class="logo-container">
+        <div class="text-2xl pb-2">Sign up to our Newsletter!</div>
+        <p class="text-sm">The latest news, articles, and resources, sent to your inbox weekly.</p>
+      </div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+        </div>
+
+        <button class="form-submit-btn" type="submit">Send Email</button>
+      </form>
+    </div>
+    </section>
+    <!-- Footer section -->
+    <footer class=" flex flex-col md:flex-row justify-center md:justify-between items-center  bg-slate-900 gap-8 px-4 py-16 text-white">
+        <div class="ml-4 text-3xl font-bold">
+            &copy; JP's Blog
+        </div>
+        <ul class="text-center flex gap-8 text-2xl justify-center flex-wrap pt-4">
+            <li><a class="hover:text-slate-600" href="">About</a></li>
+            <li><a class="hover:text-slate-600" href="">Blog</a></li>
+            <li><a class="hover:text-slate-600" href="">Jobs</a></li>
+            <li><a class="hover:text-slate-600" href="">Press</a></li>
+            <li><a class="hover:text-slate-600" href="">Partners</a></li>
+            <li><a class="hover:text-slate-600" href="">Insights</a></li>
+
+            
+
+        </ul>
+        <div id="social--links" class=" flex justify-center flex-wrap gap-5">
+                <img style="height: 50px;" class="hover:bg-blue-950 cursor-pointer" src="/img/facebook.svg" alt="fb">
+                <img style="height: 50px;" class="hover:bg-blue-950 cursor-pointer"  src="/img/github.svg" alt="gh">
+                <img style="height: 50px;" class="hover:bg-red-950 cursor-pointer"  src="/img/instagram.svg" alt="ig">
+                <img style="height: 50px;" class="hover:bg-white cursor-pointer"  src="/img/x-twitter.svg" alt="x">
+                <img style="height: 50px;" class="hover:bg-red-950  cursor-pointer"  src="/img/pinterest.svg" alt="pinterest">
+            </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
